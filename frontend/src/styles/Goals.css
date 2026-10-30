@@ -1,0 +1,127 @@
+
+.goals-container {
+  width: min(100% - 40px, 850px);
+  margin: 0 auto;
+  padding: 36px 0 50px;
+  color: #f1f5f9;
+}
+
+.goals-container > h1 {
+  margin: 0 0 28px;
+  color: #f1f5f9;
+  font-size: clamp(26px, 3vw, 34px);
+  font-weight: 800;
+  letter-spacing: -0.8px;
+}
+
+.goals-form {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  padding: 28px;
+  background: #121922;
+  border: 1px solid #263241;
+  border-radius: 16px;
+}
+
+.goal-item {
+  padding: 20px;
+  background: #0b1118;
+  border: 1px solid #263241;
+  border-radius: 12px;
+}
+
+.goal-label {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 12px;
+  margin-bottom: 14px;
+  color: #e2e8f0;
+  font-size: 14px;
+  font-weight: 600;
+}
+
+.goal-label .current {
+  color: #34d399;
+  font-size: 15px;
+  font-weight: 800;
+}
+
+.goal-item input {
+  display: block;
+  width: 100%;
+  padding: 13px 14px;
+  color: #f1f5f9;
+  background: #121922;
+  border: 1px solid #263241;
+  border-radius: 8px;
+  outline: none;
+  font-size: 14px;
+}
+
+.goal-item input:focus {
+  border-color: #34d399;
+  box-shadow: 0 0 0 3px rgba(52, 211, 153, 0.12);
+}
+
+.goal-item small {
+  display: block;
+  margin-top: 10px;
+  color: #94a3b8;
+  font-size: 12px;
+}
+
+.goals-form .btn-primary {
+  width: 100%;
+  padding: 14px;
+  color: #052e24;
+  background: #34d399;
+  border: none;
+  border-radius: 9px;
+  font-weight: 800;
+  transition: background 0.2s, transform 0.2s;
+}
+
+.goals-form .btn-primary:hover:not(:disabled) {
+  background: #10b981;
+  transform: translateY(-1px);
+}
+
+.goals-form .btn-primary:disabled {
+  color: #94a3b8;
+  background: #263241;
+}
+
+.success-msg {
+  padding: 14px 16px;
+  margin-bottom: 20px;
+  color: #6ee7b7;
+  background: rgba(52, 211, 153, 0.08);
+  border: 1px solid rgba(52, 211, 153, 0.25);
+  border-radius: 10px;
+  font-size: 14px;
+}
+
+.loading {
+  padding: 60px 20px;
+  color: #94a3b8;
+  text-align: center;
+}
+
+@media (max-width: 600px) {
+  .goals-container {
+    width: calc(100% - 28px);
+    padding-top: 24px;
+  }
+
+  .goals-form {
+    padding: 16px;
+    gap: 15px;
+  }
+
+  .goal-item {
+    padding: 16px;
+  }
+}
+
